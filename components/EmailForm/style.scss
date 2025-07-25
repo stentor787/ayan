@@ -1,0 +1,61 @@
+.email{
+    width: 100%;
+    &_title{
+        display: flex;
+        color: white;
+        justify-content: center;
+        font-weight: 900 !important;
+    }
+    &_input{
+        .v-input__append-inner{
+            margin-top: 5px !important;
+        }
+    }
+    &_input-small{
+        input{
+            padding: 0;
+          }
+          .v-input__slot{
+            min-height: 25px !important;
+          }
+          .v-input__append-inner{
+            margin-top: 1px !important;
+        }
+    }
+    &_icon:hover{
+      cursor: pointer;
+      &:active{
+        opacity: 0;
+      }
+    }
+    &_text{
+        color: rgba(255, 255, 255, 0.531);
+        padding-top: 10px;
+        text-align: center;
+    }
+    &_block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &_card{
+        width: 60%;
+        margin-bottom: 5px;
+        @media (max-width: 800px) {
+            width: 100%;
+          }
+    }
+}
+.title-small{
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 15px !important;
+}
+.mini{
+    font-size: 12px;
+    width: 100%;
+    padding: 0px;
+    line-height: 12px;
+}

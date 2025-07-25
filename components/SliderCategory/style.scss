@@ -1,0 +1,109 @@
+.slider2{
+  display: flex;
+    height: max-content !important;
+    justify-content: space-between;
+    overflow: hidden;
+    &_buttons{
+      display: flex;
+      @media screen and (max-width:600px) {
+        display: none;
+      }
+    }
+    &_icons{
+      border-radius: 50px;
+      font-size: 30px !important;
+      box-shadow: 0 1px 3px 0  !important;
+      z-index: 1;
+
+    }
+}
+.slider_box2 {
+    display: flex;
+    height: max-content;
+    margin-top: 0px;
+    @media screen and (max-width:600px) {
+      margin-top: 40px;
+    }
+  }
+  .category-box{
+    min-width: calc(12% - 2.5px);
+    max-width: calc(12% - 2.5px);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 5px;
+    transition: transform 0.2s ease;
+    @media screen and (max-width: 600px) {
+      min-width: calc(23% - 2.5px);
+      max-width: calc(23% - 2.5px);
+    }
+
+    &_img{
+        border-radius: 10px;
+        width: 98%;
+        @media screen and (max-width: 800px) {
+          background-color: #efeeee;
+        }
+    }
+    &_name{
+      text-align: center;
+      width: 100%;
+      font-size: 12px;
+      line-height: 12px;
+      overflow: hidden;
+      font-weight: 800;
+      @media screen and (max-width: 800px) {
+        font-size: 11px;
+        line-height: 16px;
+        display: flex;
+        height: 35px;
+        padding-top: 0px;
+        justify-content: center;
+        width: 74px;
+      }
+    }
+    &:hover{
+        cursor: pointer;
+        border: solid 1.5px #503CC3;
+    }
+  }
+  .slider2_row{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: visible;
+    justify-content: flex-start;
+    margin: 0;
+    width: 101%;
+    gap: 10px;
+    margin-left: 10px !important;
+    scroll-behavior: smooth;
+    @media screen and (max-width:600px){
+      overflow: auto;
+      margin-left: 10px !important;
+      gap: 15px;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+  .slider_item_img{
+    border-radius: 10px;
+    @media screen and(max-width:600px){
+      border-radius: 10px;
+      margin: 0px 10px;
+    }
+  }
+  .slider_item_img2{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    @media screen and (max-width:600px) {
+      border-radius: 0px;
+    }
+  }
+  // .animating{
+  //   transition: 0.3s ease-in-out;
+  // }
+  
+  

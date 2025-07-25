@@ -1,0 +1,108 @@
+.personal{
+    display: flex;
+    padding-top: 20px;
+    gap: 20px;
+    box-shadow: none;
+    min-height: 570px;
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        padding-top: 0px;
+      }
+    // только в мобильной версии виден
+    &_header{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 0;
+        background-color: #503CC3;
+        color: white;
+    }
+
+    &_text{
+        font-weight: 800;
+        font-size: 20px;
+        color: black;
+        margin-bottom: 0 !important;
+    }
+    &_text2{
+        font-weight: 700;
+        font-size: 15px;
+        color: black;
+        margin: 10px 0 0 !important;
+    }
+    &_user{
+        display: flex;
+        flex-direction: column;
+        &__avatar{
+            width: 100px !important;
+            height: 100px !important;
+            margin-right: 0 !important;
+        }
+    }
+    &_right-box{
+        box-shadow: 0px -1px 8px 0px rgba(34, 60, 80, 0.2);
+        border-radius: 30px;
+        width: 80%;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+           }
+    }
+    &_menu-item-box{
+        padding: 10px;
+        border-bottom: 1px solid white;
+        width: 100%;
+        &:hover{
+            cursor: pointer;
+        }
+        @media screen and (max-width: 600px) {
+            background-color: #F3F3F3;
+            border-radius: 10px;
+           }
+    }
+    &_menu-item{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @media screen and (max-width: 600px) {
+           flex-direction: row-reverse;
+           justify-content: space-between;
+          }
+    }
+    &_mob-menu-item{
+       display: flex;
+       gap: 20px;
+       align-items: center;
+    }
+    &_avatar{
+        border-radius: 50%;
+    }
+    &_left-box{
+        display: flex;
+        flex-direction: column;
+        width: 22%;
+        min-width: 22%;
+        background-color: #F3F3F3;
+        border-radius: 20px !important;
+        padding: 20px 0;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            background-color: white;
+            gap: 10px;
+            padding: 20px 10px;
+            align-items: flex-start;
+          }
+    }
+}
+
+.not-regist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    &_text{
+        font-weight: 800;
+    }
+}
+.active-link{
+    background-color: white;
+}

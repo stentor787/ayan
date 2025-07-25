@@ -1,0 +1,256 @@
+.info_index {
+  color: #4D4D4D;
+  margin-top: 40px;
+
+  @media screen and (max-width: 550px) {
+    margin-top: 0px;
+  }
+}
+
+.info_index__title {
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: bold;
+  max-width: 60%;
+  text-align: center;
+  line-height: 47px;
+
+  @media screen and (max-width: 1000px) {
+    max-width: 80%;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 22px;
+    line-height: 25px;
+    max-width: 90%;
+  }
+}
+
+.info_index_delivery{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+
+.info_index_delivery__item{
+  text-align: center;
+  @media screen and (max-width: 500px) {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  & img{
+    height: 150px;
+
+    @media screen and (max-width: 920px) {
+      height: 120px;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 100px;
+    }
+  }
+}
+
+.info_index_delivery__item_title{
+  color: #4D4D4D;
+  margin-top: 20px;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+
+  @media screen and (max-width: 920px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.info_index_delivery_block{
+  padding-top: 20px;
+  background-color: #ffffff;
+  padding-bottom: 30px;
+
+  @media screen and (max-width: 500px) {
+    padding-bottom: 0px;
+  }
+}
+
+.info_index_step{
+  margin-top: 10px;
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 20px;
+  }
+}
+
+.info_index_step__title{
+  color: #4D4D4D;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+
+.info_index_step_item{
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 670px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 590px) {
+    padding-left: 15%;
+  }
+
+  @media screen and (max-width: 380px) {
+    padding-left: 5%;
+  }
+}
+
+.info_index_step_image{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+
+  @media screen and (max-width: 920px) {
+    width: 120px;
+    height: 120px;
+  }
+
+  @media screen and (max-width: 670px) {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+
+  & img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+
+.c_info_title{
+  font-size: 28px;
+  font-weight: bold;
+  margin: {
+    top: 20px;
+    bottom: 20px;
+  };
+}
+.c_info_description{
+  font-size: 14px;
+}
+
+
+.gbottomtitle{
+  @media screen and (max-width: 1280px) {
+    padding: 10px;
+  }
+}
+
+.c_info_image {
+  position: relative;
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+.static_page-conteiner{
+  max-width: 1420px !important;
+  @media screen and (max-width: 1220px) {
+    max-width: 100%;
+  }
+}
+.dinfo{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  background-color: #eeeeee;
+  margin-top: 20px;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 100%;
+
+  & div{
+    margin-left: 10px;
+    max-width: 250px;
+
+    @media screen and (max-width: 560px) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    flex-direction: column;
+  }
+}
+.dinfo_item{
+  display: flex;
+  align-items: center;
+  color: #222222;
+  font-size: 14px;
+  padding: {
+    top: 10px;
+    bottom: 10px;
+  };
+
+  & img{
+    height: 82px;
+  }
+}
+.showcase-conteiner{
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (max-width: 1220px) {
+    width: 100%;
+  }
+}
+.category-banners{
+  margin-top: 30px;
+  margin-bottom: -10px;
+  &:hover{
+    cursor: pointer;
+  }
+  @media screen and (max-width:600px) {
+    display: none;
+  }
+}
+.category-banners-mobile{
+  display: none;
+  @media screen and (max-width:600px) {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  &:hover{
+    cursor: pointer;
+  }
+  }
+}
+.dialog{
+  width: 100% !important;
+  height: 100% !important;
+}

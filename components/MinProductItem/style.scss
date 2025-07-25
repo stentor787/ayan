@@ -1,0 +1,55 @@
+.min-product{
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: space-between;
+    position: relative;
+    @media screen and (max-width:700px) {
+        width: 30%;
+       }
+    &_bot{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    &_text{
+        text-align: center;
+        &_name{
+            line-height: 1.2 !important;
+            font-size: 14px;
+            max-height: calc(1.2 * 2 * 16px); 
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-weight: 500;
+            margin: 0 !important;
+        }
+        &_provider{
+            margin: 0 !important;
+            font-size: 11px;
+        }
+        @media screen and (max-width:700px) {
+            display: none;
+           }
+    }
+    &_price{
+        display: flex;
+        justify-content: center;
+        margin-top: -10px;
+        font-size: 13px;
+        &_total{
+            color: black;
+            margin: 0 !important;
+            font-weight: 900;
+        }
+    }
+}
+.btn-like{
+    right: -20px !important;
+    z-index: 10;
+}
+  .lazy-product-dis{
+    position: absolute;
+    margin-left: 1px;
+  }

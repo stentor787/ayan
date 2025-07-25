@@ -1,0 +1,88 @@
+.cart-preview {
+  position: absolute;
+  right: -200px;
+  top: 55px;
+  z-index: 100002;
+  min-width: 600px;
+  transition: 1s;
+  border-radius: 10px !important;
+  &_img{
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &_title{
+  &:hover{
+    cursor: pointer;
+    color: #5d4bd0;
+  }
+  &_discount{
+    color: red !important;
+    font-size: 12px !important;
+  }
+  &_price{
+    font-size: 12px !important;
+    color: rgb(160, 156, 156) !important;
+  }
+  &_oldPrice{
+    font-size: 12px !important;
+    color: rgb(151, 147, 147) !important;
+    text-decoration: line-through !important;
+    text-decoration-color: red !important;
+  }
+  }
+  &_top{
+    position: absolute;
+    top: -10px;
+    left: 55%;
+    width: 120px;
+    height: 10px;
+  }
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: flex-end;
+    margin-top: 10px;
+  }
+  &__container {
+    max-height: 300px;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  &__title {
+    color: #221b4d;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0px;
+  }
+  &__subtitle {
+    color: #221b4d;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__list-item {
+    gap: 10px;
+  }
+  &__btn {
+    color: #fff;
+  }
+}
+.alert-message{
+  padding: 5px;
+  margin-bottom: 0;
+  margin-top: 5px;
+  &__text{
+    margin-left: 10px;
+    font-size: 13px;
+  }
+}

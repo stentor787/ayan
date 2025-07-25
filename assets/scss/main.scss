@@ -1,0 +1,74 @@
+@import './base/variables';
+
+@import './utils/reset';
+@import './utils/container';
+@import './utils/spacing';
+@import './utils/display';
+@import './utils/typography';
+@import url("./fonts/stylesheet.scss");
+
+
+  $body-font-family: 'Mulish';
+  @keyframes scale {
+    0%{
+        transform: scale(0.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+  
+  .v-application {
+    font-family: $body-font-family, sans-serif !important;
+  }
+  .v-application--wrap{
+    min-height: calc(100vh + 250px) !important;
+  }
+
+  .v-btn--outlined:before {
+     border-radius: 10px !important;
+     height: 50px !important;
+   }
+
+  .v-pagination__item {
+     text-align: center;
+    }
+  .custom-tooltip{
+      border-radius: 20px !important;
+      &_shop{
+        background-color: #9696F5 !important;
+        border-radius: 5px !important;
+      }
+  }
+  .prev{
+    animation: scale 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    overflow-y:hidden;
+    border-radius: 10px;
+    &_img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+.loader-big{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+// стиль для мобильного диалогового окна
+.mobile{
+  height: 60% !important;
+  top: auto !important;
+  bottom: 0 !important;
+  padding-top: 5px !important;
+  width: 100% !important;
+  transition-duration: 1s !important;
+  &_card{
+      box-shadow: 0 0 10px 5px rgb(163, 163, 163);
+  }
+}

@@ -1,0 +1,59 @@
+stages: 
+  - build_and_deploy
+  - start_server
+startProd:
+  stage: start_server
+  tags:
+    - prod
+  script:
+    - cd /var/www/ayan-site
+    - pm2 kill
+    - npm run start:production
+  after_script:
+    - redis-cli flushall
+  only:
+    - main
+startTest:
+  stage: start_server
+  tags:
+    - test
+  script:
+    - cd /var/www/ayan-site
+    - pm2 kill
+    - npm run start:staging
+  after_script:
+    - redis-cli flushall
+  only:
+    - test
+deployProd:
+  stage: build_and_deploy
+  tags:
+    - prod
+  script:
+    - cd /var/www/ayan-site
+    - git config user.email "gg.stentor@mail.ru"
+    - git config user.name "Beybars"
+    - git reset --hard origin/main
+    - git checkout main
+    - git pull origin main
+    - npm install
+    - npm run build
+  only:
+    - main
+deployTest:
+  stage: build_and_deploy
+  tags:
+    - test
+  script:
+    - cd /var/www/ayan-site
+    # вернуть если ломается CI/CD
+    # - git config user.email "frakiec3600@gmail.com"
+    # - git config user.name "Loginovsky Max"
+    # - git reset --hard origin/test
+    - git reset --hard  
+    - git checkout test
+    - git pull origin test
+    - npm install
+    - npm run build
+  only: 
+    - test  

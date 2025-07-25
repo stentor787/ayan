@@ -1,0 +1,59 @@
+.adress{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+    // width: 1220px;
+    width: 100%;
+    margin-right: 17px;
+    &_data{
+        &__text{
+            padding-left: 9px;
+            font-weight: 600;
+            margin: 0 !important;
+        }
+        &__adress{
+            padding-left: 9px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+}
+.orders{
+    padding: 20px 7px 10px;
+    &_header{
+        display: flex;
+        justify-content: space-between;
+        &__tooltip{
+            color: black;
+        }
+    }
+    &_title{
+        font-size: 20px;
+        font-weight: 700;
+        &__btn{
+            margin-right: -13px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        padding-top: 190px;
+      }
+}
+.conteiner{
+    background-color: #503CC3;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+.history-orders {
+    padding: 10px 0px 10px;
+}
+
+.personal-container{
+    position: absolute;
+    width: 75%;
+    border-radius: 30px;
+    background-color: #503CC3;
+    display: flex;
+    justify-content: center;
+}

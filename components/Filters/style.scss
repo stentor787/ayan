@@ -1,0 +1,125 @@
+.price-block {
+  padding: 3px 10px;
+  border-bottom: 1px solid #DDDDDD;
+  &__title{
+    margin: 0 !important;
+    font-size: 13px;
+    font-weight: bold !important;
+  }
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 5px;
+      margin-top: 5px;
+      @media screen and (max-width: 1000px) {
+        flex-direction: column;
+      }
+    }
+    &__field {
+       .v-input__slot{
+        padding: 10px !important;
+        border-radius: 10px !important;
+        min-height: 30px !important;
+        background-color: white !important;
+       }
+      .v-text-field__slot{
+        font-size: 11px !important;
+        justify-content: center !important;
+      }
+    }
+    &__field input[type='number'] {
+      -moz-appearance:textfield;
+      padding: 0 !important;
+    }
+    &__field input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+  }
+  }
+  .filters{
+    background-color: #F4F6FA;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-right: 10px;
+    @media screen and (max-width:800px) {
+      display: none;
+    }
+    &_brand{
+      padding-bottom: 2px !important;
+    }
+    &_title{
+      margin: 0 !important;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    &_reset{
+        font-size: 11px !important;
+        border-radius: 10px !important;
+        margin: 10px 0;
+    }
+    &_item{
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      max-height: 30px !important;
+      min-height: 30px !important;
+      overflow: hidden;
+      line-height:12px;
+        .v-list-item__subtitle{
+            font-size: 12px !important;
+        }
+    }
+    .v-list-item{
+        padding: 0 10px 0 0px !important;
+    }
+    .v-list-item__content{
+      padding: 0px !important;
+    }
+    &_checkbox{
+     margin-top: 0 !important;
+     padding-top: 0 !important;
+    }
+  }
+.filters-mobile{
+  display: none;
+  @media screen and (max-width:800px) {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &_btn{
+    font-size: 10px !important;
+    width: 350px;
+    background-color:#503CC3 !important;
+    color: white !important;
+  }
+  &_btnOff{
+    min-width: 103px !important;
+    font-size: 10px !important;
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid #cfcfcf;
+    @media screen and (max-width:375px){
+      width: 85px !important;
+    }
+  }
+  &_btnOn {
+      min-width: 103px !important;
+      font-size: 10px !important;
+      background-color:#503CC3 !important;
+      color: white !important;
+      @media screen and (max-width:375px) {
+        width: 85px !important;
+      }
+    }
+  }
+  &_allFilters{
+    display: none;
+    @media screen and (max-width:800px) {
+      display: flex;
+      background-color: white !important;
+      min-width: 10px !important;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.orders{
+    width: 100%;
+    &_header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &_title{
+        color: black;
+        font-size: 22px;
+        font-weight: 800;
+    }
+    &_buttons{
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+        margin-top: 20px;
+        &_item{
+            border-radius: 10px !important;
+            height: 50px !important;
+        }
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+          }
+      }
+}
+// блок с данными о заказе
+.data{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    &_id{
+        color: black;
+        font-size: 22px;
+        font-weight: 800; 
+    }
+    &_item{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #E1E6EF;
+        margin-bottom: 15px;
+    }
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+    &_slider{
+      width: 70%;
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+      }
+}
+.bold-text{
+    font-weight: 800;
+    color: black;
+    text-align: right;
+}
+.red-text{
+    color: #EF6B82;
+}

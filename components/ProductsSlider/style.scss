@@ -1,0 +1,36 @@
+.slider3{
+display: flex;
+height: max-content;
+@media screen and (max-width: 800px) {
+ height: max-content;
+}
+&_button{
+  &_icon{
+  display: flex;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 3px 0 !important;
+  }
+}
+&_row{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+.slider_box3 {
+  display: flex;
+  overflow: hidden;
+  height: max-content;
+  justify-content: flex-start;
+  scroll-behavior: smooth;
+  width: 100%;
+  gap: 40px;
+  }

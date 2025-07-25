@@ -1,0 +1,24 @@
+.navbar-mobile {
+    display: none;
+    @media screen and (max-width:800px) {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #fbf8f8;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 10;
+    }
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }

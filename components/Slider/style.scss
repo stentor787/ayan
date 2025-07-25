@@ -1,0 +1,80 @@
+.slider{
+  height: max-content !important;
+  margin-top: 22px;
+  @media screen and (max-width:800px) {
+    margin-top: 5px;
+   }
+  &_item{
+    display: flex;
+    &:hover{
+      cursor: pointer;
+    }
+    &_img{
+      border-radius: 10px;
+    }
+    &_img2{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      height: 100%;
+      background-position: left;
+      background-size: cover;
+    }
+  }
+}
+.sheet{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  @media screen and (max-width:800px) {
+    margin: 0px -15px;
+    justify-content: center;
+    gap: 0px;
+    // height: 190px;
+   }
+  
+ &_item2{
+  width: 10%;
+  @media screen and (max-width:800px) {
+    display: none;
+   }
+ }
+ .sheet_item{
+ @media screen and (max-width:600px) {
+  width: 100%;
+ }
+}
+}
+.v-carousel__item{
+  height: max-content !important;
+}
+
+.slider_box {
+  height: 338px;
+  @media screen and (max-width: 1024px) {
+    height: 255px;
+  }
+  @media screen and (max-width: 820px) {
+    height: 210px;
+  }
+  @media screen and (max-width: 540px) {
+    height: 150px;
+  }
+  @media screen and (max-width: 430px) {
+    height: 100px;
+  }
+  @media screen and (max-width: 412px) {
+    height: 100px;
+  }
+  @media screen and (max-width: 390px) {
+    height: 90px;
+  }
+  @media screen and (max-width: 375px) {
+    height: 90px;
+  }
+  @media screen and (max-width: 360px) {
+    height: 90px;
+  }
+  @media screen and (max-width: 320px) {
+    height: 90px;
+  }
+}

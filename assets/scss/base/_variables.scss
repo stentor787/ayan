@@ -1,0 +1,36 @@
+// breakpoints
+$screen_s: 320px;
+$screen_sm: 375px;
+$screen_sl: 425px;
+
+$screen_m: 768px;
+$screen_ml: 1024px;
+
+$screen_ls: 1280px;
+$screen_lm: 1300px;
+$screen_l: 1440px;
+
+$screen_xl: 1600px;
+$screen_hd: 1920px;
+
+$all_points: (
+  $screen_s,
+  $screen_sm,
+  $screen_sl,
+  $screen_m,
+  $screen_ml,
+  $screen_ls
+);
+$container_points: (
+  $screen_s,
+  $screen_sm,
+  $screen_sl,
+  $screen_m,
+  $screen_ml,
+  $screen_ls
+);
+
+// colors
+$gray: #ccc;
+$control-border: #dedede;
+$primary: #503CC3;

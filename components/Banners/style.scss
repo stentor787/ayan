@@ -1,0 +1,28 @@
+.banner{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    &_item{
+      cursor: pointer;
+    }
+    &_img{
+      border-radius: 10px;
+    }
+}
+
+.banner-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.banner-quarter-width {
+  width: calc(25% - 20px); /* 4 баннера в строке */
+  border-radius: 10px;
+}
+
+.banner-half-width {
+  width: calc(50% - 20px); /* 2 баннера в строке */
+  border-radius: 10px;
+}

@@ -1,0 +1,42 @@
+.rev-modal{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &_rate{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 20px;
+        p{
+            margin: 0 !important;
+        }
+    }
+    &_btns{
+        justify-content: right;
+        padding-bottom: 30px;
+    }
+    &_foto{
+        margin-top: 20px;
+    }
+    &_foto-block{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &_foto-single{
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        height: 100px;
+    }
+    &_foto-delete{
+        position: absolute;
+        right: -20px;
+        top: -20px;
+    }
+    &_foto-icon:hover{
+        color: #503CC3 !important;
+    }
+}
